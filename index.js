@@ -17,7 +17,6 @@ function transportByFara(options) {
   var skoleSeljord = require('./lib/data/skoleids_seljord.json');
   var skoleSove = require('./lib/data/skoleids_sove.json');
   var skoleVestTelemark = require('./lib/data/skoleids_vest_telemark.json');
-
   var postnrBoGvarvUlefoss = require('./lib/data/bo_gvarv_ulefoss.json');
   var postnrBoGvarvUlefossSove = require('./lib/data/bo_gvarv_ulefoss_sove.json');
   var postnrBoUlefossGvarvGrenland = require('./lib/data/bo_ulefoss_gvarv_grenland.json');
@@ -31,7 +30,7 @@ function transportByFara(options) {
 
   //Skole - Vest-Telemark vgs.-(Begge avdelinger.) Alle postnummer i Fyresdal, Kviteseid, Nissedal, Tokke og Vinje -> false
   if (skoleVestTelemark.indexOf(skoleid) > -1 && postnrFyresdalKviteseidNissedalTokkeVinje.indexOf(postnummer) > -1) {
-    return true;
+    return false;
   }
 
   //Skole Vest-Telemark vgs-(Begge avdelinger) Postnummer 3805, 3835 og 3840 Seljord -> false
