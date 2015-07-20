@@ -2,7 +2,7 @@
 
 var apiUrl = 'https://api.t-fk.no/postnummer/kommunenavn';
 var generateDataFiles = require('./lib/generateDataFile');
-var jobsToDo = 7;
+var jobsToDo = 8;
 var jobsDone = 0;
 
 function areWeDoneYet(){
@@ -15,6 +15,16 @@ function areWeDoneYet(){
 
 //generates files for Fyresdal, Kviteseid, Nissedal, Tokke og Vinje
 generateDataFiles({apiUrl:apiUrl, queryList:['Fyresdal', 'Kviteseid', 'Nissedal', 'Tokke', 'Vinje'], fileName:'fyresdal_kviteseid_nissedal_tokke_vinje.json'}, function(error, data) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(data);
+  }
+  areWeDoneYet();
+});
+
+//generates files for Seljord, Kviteseid og Nissedal
+generateDataFiles({apiUrl:apiUrl, queryList:['Seljord', 'Kviteseid', 'Nissedal'], fileName:'seljord_kviteseid_nissedal.json'}, function(error, data) {
   if (error) {
     console.error(error);
   } else {
