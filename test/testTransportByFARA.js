@@ -200,4 +200,26 @@ describe('transportByFara', function() {
     done();
   });
 
+  it('returns true if postnummer Notodden og skole Kvitsund', function(done) {
+
+    var options = {
+      postnummer: 3681,
+      skoleid: 3850
+    };
+    var result = transportByFara(options);
+    assert.equal(true, result);
+    done();
+  });
+
+  it('returns false if postnummer Seljord og skole Kvitsund', function(done) {
+
+    var options = {
+      postnummer: 3835,
+      skoleid: 3850
+    };
+    var result = transportByFara(options);
+    assert.equal(false, result);
+    done();
+  });
+
 });

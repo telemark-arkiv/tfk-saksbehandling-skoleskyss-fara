@@ -17,12 +17,14 @@ function transportByFara(options) {
   var skoleSeljord = require('./lib/data/skoleids_seljord.json');
   var skoleSove = require('./lib/data/skoleids_sove.json');
   var skoleVestTelemark = require('./lib/data/skoleids_vest_telemark.json');
+  var skoleKvitsund = require('./lib/data/skoleids_kvitsund.json');
   var postnrBoGvarvUlefoss = require('./lib/data/bo_gvarv_ulefoss.json');
   var postnrBoGvarvUlefossSove = require('./lib/data/bo_gvarv_ulefoss_sove.json');
   var postnrBoUlefossGvarvGrenland = require('./lib/data/bo_ulefoss_gvarv_grenland.json');
   var postnrFyresdalKviteseidNissedalTokkeVinje = require('./lib/data/fyresdal_kviteseid_nissedal_tokke_vinje.json');
   var postnrSeljord = require('./lib/data/seljord.json');
   var postnrSeljordKviteseid = require('./lib/data/seljord_kviteseid.json');
+  var postnrSeljordKviteseidNissedal = require('./lib/data/seljord_kviteseid_nissedal.json');
   var postnrUlefossGvarvBo = require('./lib/data/ulefoss_gvarv_bo.json');
   var skoleid = parseInt(options.skoleid, 10);
   var postnummer = parseInt(options.postnummer, 10);
@@ -30,6 +32,11 @@ function transportByFara(options) {
 
   //Skole - Vest-Telemark vgs.-(Begge avdelinger.) Alle postnummer i Fyresdal, Kviteseid, Nissedal, Tokke og Vinje -> false
   if (skoleVestTelemark.indexOf(skoleid) > -1 && postnrFyresdalKviteseidNissedalTokkeVinje.indexOf(postnummer) > -1) {
+    return false;
+  }
+
+  //Skole - Kvitsund gymnas Alle postnummer i Seljord, Kviteseid og NIssedal -> false
+  if (skoleKvitsund.indexOf(skoleid) > -1 && postnrSeljordKviteseidNissedal.indexOf(postnummer) > -1) {
     return false;
   }
 

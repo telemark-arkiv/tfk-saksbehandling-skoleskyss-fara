@@ -11,6 +11,7 @@ Dvs false her returnerer true for FARA.
 - Bø videregåande skule
 - Hjalmar Johansen videregående skole, avdeling Fritidsparken
 - Hjalmar Johansen videregående skole, avdeling Klosterskogen
+- Kvitsund gymnas
 - Nome videregående skole, avdeling Lunde
 - Nome videregående skole, avdeling Søve
 - Porsgrunn videregående skole, avdeling Nord
@@ -25,6 +26,7 @@ Dvs false her returnerer true for FARA.
 # Postnummer
 
 - Alle postnummer i Fyresdal, Kviteseid, Nissedal, Tokke og Vinje som skal til Vest-Telemark vgs.-(Begge avdelinger.)
+- Alle postnummer i Seljord, Kviteseid og Nissedal => som skal til Kvitsund vgs
 - Postnummer 3805, 3835 og 3840 Seljord som skal til Vest-Telemark vgs.-(Begge avdelinger.)
 - Postnummer 3830 og 3831 Ulefoss,  3810 og 3834 Gvarv, 3800, 3803 og 3833 Bø som skal til Vest-Telemark-(avd. Seljord)
 - Postnummer 3805, 3835 og 3840 Seljord samt 3836 og 3850 Kviteseid som skal til Bø vgs. og Nome vgs.-(Begge avdelinger.)
