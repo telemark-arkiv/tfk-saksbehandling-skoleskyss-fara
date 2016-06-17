@@ -1,225 +1,180 @@
-'use strict';
+'use strict'
 
-var assert = require('assert');
-var transportByFara = require('../index');
+const tap = require('tap')
+const transportByFara = require('../index')
 
-describe('transportByFara', function() {
+tap.throws(
+  function () {
+    const options = false
+    transportByFara(options)
+  },
+  {message: 'Missing required input: options object'},
+  'requires an options object'
+)
 
-  it('requires an options object', function(done) {
-
-    var options = false;
-    var result = transportByFara(options);
-    var condition = false;
-    if ((result instanceof Error) && /Missing required input: options object/.test(result)) {
-      condition = true;
-    }
-    assert.equal(true, condition);
-    done();
-  });
-
-  it('requires options.postnummer to exist', function(done) {
-
-    var options = {
+tap.throws(
+  function () {
+    const options = {
       postnummer: false
-    };
-    var result = transportByFara(options);
-    var condition = false;
-    if ((result instanceof Error) && /Missing required input: options.postnummer/.test(result)) {
-      condition = true;
     }
-    assert.equal(true, condition);
-    done();
-  });
+    transportByFara(options)
+  },
+  {message: 'Missing required input: options.postnummer'},
+  'requires options.postnummer to exist'
+)
 
-  it('requires options.skoleid to exist', function(done) {
-
-    var options = {
+tap.throws(
+  function () {
+    const options = {
       postnummer: true,
       skoleid: false
-    };
-    var result = transportByFara(options);
-    var condition = false;
-    if ((result instanceof Error) && /Missing required input: options.skoleid/.test(result)) {
-      condition = true;
     }
-    assert.equal(true, condition);
-    done();
-  });
+    transportByFara(options)
+  },
+  {message: 'Missing required input: options.skoleid'},
+  'requires options.skoleid to exist'
+)
 
-  it('returns false if postnummer Fyresdal og skole Vest-Telemark (Dalen)', function(done) {
+tap.test('returns false if postnummer Fyresdal og skole Vest-Telemark (Dalen)', function (test) {
+  const options = {
+    postnummer: 3870,
+    skoleid: 3880
+  }
+  tap.equal(transportByFara(options), false, 'Test OK')
+  test.done()
+})
 
-    var options = {
-      postnummer: 3870,
-      skoleid: 3880
-    };
-    var result = transportByFara(options);
-    assert.equal(false, result);
-    done();
-  });
+tap.test('returns true if postnummer Notodden og skole Vest-Telemark (Seljord)', function (test) {
+  const options = {
+    postnummer: 3681,
+    skoleid: 3840
+  }
+  tap.equal(transportByFara(options), true, 'Test OK')
+  test.done()
+})
 
-  it('returns true if postnummer Notodden og skole Vest-Telemark (Seljord)', function(done) {
+tap.test('returns false if postnummer 3831 Ulefoss og skole Seljord', function (test) {
+  const options = {
+    postnummer: 3831,
+    skoleid: 3840
+  }
+  tap.equal(transportByFara(options), false, 'Test OK')
+  test.done()
+})
 
-    var options = {
-      postnummer: 3681,
-      skoleid: 3840
-    };
-    var result = transportByFara(options);
-    assert.equal(true, result);
-    done();
-  });
+tap.test('returns true if postnummer Porsgrunn og skole Seljord', function (test) {
+  const options = {
+    postnummer: 3912,
+    skoleid: 3840
+  }
+  tap.equal(transportByFara(options), true, 'Test OK')
+  test.done()
+})
 
-  it('returns false if postnummer 3831 Ulefoss og skole Seljord', function(done) {
+tap.test('returns true if postnummer Porsgrunn og skole Bø', function (test) {
+  const options = {
+    postnummer: 3912,
+    skoleid: 3802
+  }
+  tap.equal(transportByFara(options), true, 'Test OK')
+  test.done()
+})
 
-    var options = {
-      postnummer: 3831,
-      skoleid: 3840
-    };
-    var result = transportByFara(options);
-    assert.equal(false, result);
-    done();
-  });
+tap.test('returns false if postnummer 3840 Seljord og skole Bø', function (test) {
+  const options = {
+    postnummer: 3840,
+    skoleid: 3802
+  }
+  tap.equal(transportByFara(options), false, 'Test OK')
+  test.done()
+})
 
-  it('returns true if postnummer Porsgrunn og skole Seljord', function(done) {
+tap.test('returns true if postnummer Skien og skole Bø', function (test) {
+  const options = {
+    postnummer: 3702,
+    skoleid: 3802
+  }
+  tap.equal(transportByFara(options), true, 'Test OK')
+  test.done()
+})
 
-    var options = {
-      postnummer: 3912,
-      skoleid: 3840
-    };
-    var result = transportByFara(options);
-    assert.equal(true, result);
-    done();
-  });
+tap.test('returns false if postnummer 3803 Bø og skole Bø', function (test) {
+  const options = {
+    postnummer: 3803,
+    skoleid: 3802
+  }
+  tap.equal(transportByFara(options), false, 'Test OK')
+  test.done()
+})
 
-  it('returns true if postnummer Porsgrunn og skole Bø', function(done) {
+tap.test('returns false if postnummer 3833 Bø og skole Søve', function (test) {
+  const options = {
+    postnummer: 3803,
+    skoleid: 3830
+  }
+  tap.equal(transportByFara(options), false, 'Test OK')
+  test.done()
+})
 
-    var options = {
-      postnummer: 3912,
-      skoleid: 3802
-    };
-    var result = transportByFara(options);
-    assert.equal(true, result);
-    done();
-  });
+tap.test('returns true if postnummer Notodden og skole Søve', function (test) {
+  const options = {
+    postnummer: 3681,
+    skoleid: 3830
+  }
+  tap.equal(transportByFara(options), true, 'Test OK')
+  test.done()
+})
 
-  it('returns false if postnummer 3840 Seljord og skole Bø', function(done) {
+tap.test('returns false if postnummer 3831 Ulefoss og skole Skogmo', function (test) {
+  const options = {
+    postnummer: 3831,
+    skoleid: 3735
+  }
+  tap.equal(transportByFara(options), false, 'Test OK')
+  test.done()
+})
 
-    var options = {
-      postnummer: 3840,
-      skoleid: 3802
-    };
-    var result = transportByFara(options);
-    assert.equal(false, result);
-    done();
-  });
+tap.test('returns true if postnummer Notodden og skole Skogmo', function (test) {
+  const options = {
+    postnummer: 3681,
+    skoleid: 3735
+  }
+  tap.equal(transportByFara(options), true, 'Test OK')
+  test.done()
+})
 
-  it('returns true if postnummer Skien og skole Bø', function(done) {
+tap.test('returns false if postnummer 3834 Gvarv og skole Bø', function (test) {
+  const options = {
+    postnummer: 3834,
+    skoleid: 3802
+  }
+  tap.equal(transportByFara(options), false, 'Test OK')
+  test.done()
+})
 
-    var options = {
-      postnummer: 3702,
-      skoleid: 3802
-    };
-    var result = transportByFara(options);
-    assert.equal(true, result);
-    done();
-  });
+tap.test('returns true if postnummer Notodden og skole Bø', function (test) {
+  const options = {
+    postnummer: 3681,
+    skoleid: 3802
+  }
+  tap.equal(transportByFara(options), true, 'Test OK')
+  test.done()
+})
 
-  it('returns false if postnummer 3803 Bø og skole Bø', function(done) {
+tap.test('returns true if postnummer Notodden og skole Kvitsund', function (test) {
+  const options = {
+    postnummer: 3681,
+    skoleid: 3850
+  }
+  tap.equal(transportByFara(options), true, 'Test OK')
+  test.done()
+})
 
-    var options = {
-      postnummer: 3803,
-      skoleid: 3802
-    };
-    var result = transportByFara(options);
-    assert.equal(false, result);
-    done();
-  });
-
-  it('returns false if postnummer 3833 Bø og skole Søve', function(done) {
-
-    var options = {
-      postnummer: 3803,
-      skoleid: 3830
-    };
-    var result = transportByFara(options);
-    assert.equal(false, result);
-    done();
-  });
-
-  it('returns true if postnummer Notodden og skole Søve', function(done) {
-
-    var options = {
-      postnummer: 3681,
-      skoleid: 3830
-    };
-    var result = transportByFara(options);
-    assert.equal(true, result);
-    done();
-  });
-
-  it('returns false if postnummer 3831 Ulefoss og skole Skogmo', function(done) {
-
-    var options = {
-      postnummer: 3831,
-      skoleid: 3735
-    };
-    var result = transportByFara(options);
-    assert.equal(false, result);
-    done();
-  });
-
-  it('returns true if postnummer Notodden og skole Skogmo', function(done) {
-
-    var options = {
-      postnummer: 3681,
-      skoleid: 3735
-    };
-    var result = transportByFara(options);
-    assert.equal(true, result);
-    done();
-  });
-
-  it('returns false if postnummer 3834 Gvarv og skole Bø', function(done) {
-
-    var options = {
-      postnummer: 3834,
-      skoleid: 3802
-    };
-    var result = transportByFara(options);
-    assert.equal(false, result);
-    done();
-  });
-
-  it('returns true if postnummer Notodden og skole Bø', function(done) {
-
-    var options = {
-      postnummer: 3681,
-      skoleid: 3802
-    };
-    var result = transportByFara(options);
-    assert.equal(true, result);
-    done();
-  });
-
-  it('returns true if postnummer Notodden og skole Kvitsund', function(done) {
-
-    var options = {
-      postnummer: 3681,
-      skoleid: 3850
-    };
-    var result = transportByFara(options);
-    assert.equal(true, result);
-    done();
-  });
-
-  it('returns false if postnummer Seljord og skole Kvitsund', function(done) {
-
-    var options = {
-      postnummer: 3835,
-      skoleid: 3850
-    };
-    var result = transportByFara(options);
-    assert.equal(false, result);
-    done();
-  });
-
-});
+tap.test('returns false if postnummer Seljord og skole Kvitsund', function (test) {
+  const options = {
+    postnummer: 3835,
+    skoleid: 3850
+  }
+  tap.equal(transportByFara(options), false, 'Test OK')
+  test.done()
+})
