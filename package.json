@@ -36,7 +36,9 @@
   "devDependencies": {
     "coveralls": "2.11.9",
     "standard": "7.1.2",
-    "tap": "5.8.0",
-    "valid-url": "1.0.9"
+    "tap": "5.7.2"
+  },
+  "dependencies":{
+    "is-file": "1.0.0"
   }
 }
