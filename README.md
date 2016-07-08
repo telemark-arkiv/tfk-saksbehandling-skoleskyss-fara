@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/telemark/tfk-saksbehandling-skoleskyss-fara.svg?branch=master)](https://travis-ci.org/telemark/tfk-saksbehandling-skoleskyss-fara)
+[![Coverage Status](https://coveralls.io/repos/telemark/tfk-saksbehandling-skoleskyss-fara/badge.svg?branch=master&service=github)](https://coveralls.io/github/telemark/tfk-saksbehandling-skoleskyss-fara?branch=master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 # tfk-saksbehandling-skoleskyss-fara
 Node-module for identifying FARA as transporter.
