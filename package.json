@@ -1,6 +1,6 @@
 {
   "name": "tfk-saksbehandling-skoleskyss-fara",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Checks if FARA is transporter",
   "license": "MIT",
   "author": {
@@ -8,9 +8,16 @@
     "email": "geir.gasodden@pythonia.no",
     "url": "https://github.com/zrrrzzt"
   },
+  "contributors": [
+    {
+      "name": "Jørgen Johansen",
+      "email": "post@jorgenjohansen.no",
+      "url": "https://jorgenjohansen.no"
+    }
+  ],
   "main": "index.js",
   "engines": {
-    "node": ">=4.4.5"
+    "node": ">=4.4.7"
   },
   "scripts": {
     "test": "standard && tap --reporter=spec test/*.js",
