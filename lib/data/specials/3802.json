@@ -1,0 +1,356 @@
+{
+  "3803": [
+    {
+      "name": "Tjønnåsvegen",
+      "range": {
+        "min": 2,
+        "max": 64
+      }
+    },
+    {
+      "name": "Myhrevegen",
+      "range": {
+        "min": 151,
+        "max": 153
+      }
+    },
+    {
+      "name": "Roevegen",
+      "range": {
+        "min": 4,
+        "max": 199
+      }
+    },
+    {
+      "name": "Nyvollvegen",
+      "range": {
+        "min": 11,
+        "max": 21
+      }
+    },
+    {
+      "name": "Lundevegen",
+      "range": {
+        "min": 120,
+        "max": 476
+      }
+    },
+    {
+      "name": "Uvdalvegen",
+      "range": {
+        "min": 4,
+        "max": 834
+      }
+    },
+    {
+      "name": "Dagstjønnvegen",
+      "range": {
+        "min": 10,
+        "max": 226
+      }
+    },
+    {
+      "name": "Breskehaugbakken",
+      "range": {
+        "min": 1,
+        "max": 71
+      }
+    },
+    {
+      "name": "Tjønnåsen",
+      "range": {
+        "min": 1,
+        "max": 8
+      }
+    },
+    {
+      "name": "Stadskleivvegen",
+      "range": {
+        "min": 13,
+        "max": 72
+      }
+    },
+    {
+      "name": "Skyttarvegen",
+      "range": {
+        "min": 1,
+        "max": 166
+      }
+    },
+    {
+      "name": "Kyrkjevegen",
+      "range": {
+        "min": 129,
+        "max": 169
+      }
+    },
+    {
+      "name": "Rokkemakervegen",
+      "range": {
+        "min": 10,
+        "max": 81
+      }
+    }
+  ],
+ "3810":[
+   {
+     "name": "Aslaksborgvegen",
+     "range": {
+       "min": 10,
+       "max": 74
+     }
+   },
+   {
+     "name": "Beinstigen",
+     "range": {
+       "min": 1,
+       "max": 4
+     }
+   },
+   {
+     "name": "Erik Werenskiolds veg",
+     "range": {
+       "min": 1,
+       "max": 14
+     }
+   },
+   {
+     "name": "Gamlegata",
+     "range": {
+       "min": 3,
+       "max": 56
+     }
+   },
+   {
+     "name": "Gunheimsvegen",
+     "range": {
+       "min": 1,
+       "max": 180
+     }
+   },
+   {
+     "name": "Gvarvgata",
+     "range": {
+       "min": 1,
+       "max": 180
+     }
+   },
+   {
+     "name": "Gåsefetbrinken",
+     "range": {
+       "min": 2,
+       "max": 8
+     }
+   },
+   {
+     "name": "Gåsefetvegen",
+     "range": {
+       "min": 1,
+       "max": 23
+     }
+   },
+   {
+     "name": "Hallenvegen",
+     "range": {
+       "min": 1,
+       "max": 130
+     }
+   },
+   {
+     "name": "Haugenjordet",
+     "range": {
+       "min": 1,
+       "max": 12
+     }
+   },
+   {
+     "name": "Holmenvegen",
+     "range": {
+       "min": 1,
+       "max": 90
+     }
+   },
+   {
+     "name": "Hørtevegen",
+     "range": {
+       "min": 1,
+       "max": 499
+     }
+   },
+   {
+     "name": "Ketil Skogens veg",
+     "range": {
+       "min": 1,
+       "max": 18
+     }
+   },
+   {
+     "name": "Kåsingrenda",
+     "range": {
+       "min": 55,
+       "max": 80
+     }
+   },
+   {
+     "name": "Leikvangvegen",
+     "range": {
+       "min": 100,
+       "max": 192
+     }
+   },
+   {
+     "name": "Nesoddvegen",
+     "range": {
+       "min": 20,
+       "max": 290
+     }
+   },
+   {
+     "name": "Nesvegen",
+     "range": {
+       "min": 2,
+       "max": 33
+     }
+   },
+   {
+     "name": "Norsjøvegen",
+     "range": {
+       "min": 4,
+       "max": 4
+     }
+   },
+   {
+     "name": "Notevarpvegen",
+     "range": {
+       "min": 1,
+       "max": 16
+     }
+   },
+   {
+     "name": "Nyhussvingen",
+     "range": {
+       "min": 26,
+       "max": 49
+     }
+   },
+   {
+     "name": "Nyhusvegen",
+     "range": {
+       "min": 5,
+       "max": 17
+     }
+   },
+   {
+     "name": "Prestholtvegen",
+     "range": {
+       "min": 31,
+       "max": 33
+     }
+   },
+   {
+     "name": "Sauheradvegen",
+     "range": {
+       "min": 111,
+       "max": 205
+     }
+   },
+   {
+     "name": "Skrivarvegen",
+     "range": {
+       "min": 1,
+       "max": 44
+     }
+   },
+   {
+     "name": "Steinsrudvegen",
+     "range": {
+       "min": 11,
+       "max": 66
+     }
+   },
+   {
+     "name": "Sætersbøvegen",
+     "range": {
+       "min": 6,
+       "max": 51
+     }
+   },
+   {
+     "name": "Sætrevegen",
+     "range": {
+       "min": 42,
+       "max": 256
+     }
+   },
+   {
+     "name": "Sætrevegen",
+     "range": {
+       "min": 258,
+       "max": 258
+     }
+   },
+   {
+     "name": "Tangenvegen",
+     "range": {
+       "min": 4,
+       "max": 30
+     }
+   },
+   {
+     "name": "Tinghaugvegen",
+     "range": {
+       "min": 1,
+       "max": 105
+     }
+   },
+   {
+     "name": "Torkild Gunnheims veg",
+     "range": {
+       "min": 1,
+       "max": 3
+     }
+   },
+   {
+     "name": "Torshølvegen",
+     "range": {
+       "min": 2,
+       "max": 14
+     }
+   },
+   {
+     "name": "Underbergåsen",
+     "range": {
+       "min": 1,
+       "max": 18
+     }
+   },
+   {
+     "name": "Vestre Prestholdt",
+     "range": {
+       "min": 5,
+       "max": 41
+     }
+   },
+   {
+     "name": "Øyanevegen",
+     "range": {
+       "min": 58,
+       "max": 92
+     }
+   },
+   {
+     "name": "Bøvegen",
+     "range": {
+       "min": 185,
+       "max": 317
+     }
+   },
+   {
+     "name": "Åsåresvegen",
+     "range": {
+       "min": 31,
+       "max": 145
+     }
+   }
+ ]
+}

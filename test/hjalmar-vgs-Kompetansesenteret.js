@@ -4,7 +4,9 @@ const tap = require('tap')
 const isFara = require('../index')
 var options = {
   skoleid: 3716,
-  postnummer: ''
+  postnummer: '',
+  gatenavn: 'Djevelgaten',
+  husnummer: '666'
 }
 
 options.postnummer = 3960

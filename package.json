@@ -1,9 +1,8 @@
 {
   "name": "tfk-saksbehandling-skoleskyss-fara",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Checks if FARA is transporter",
   "license": "MIT",
-  "private": true,
   "author": {
     "name": "Geir Gåsodden",
     "email": "geir.gasodden@pythonia.no",
