@@ -34,10 +34,10 @@ options.postnummer = 3805
 tap.equal(isFara(options), false, 'Porsgrunn vgs, avdeling Sør returns false from 3805 Bø i Telemark')
 
 options.postnummer = 3840
-tap.equal(isFara(options), false, 'Porsgrunn vgs, avdeling Sør returns false from 3672 Seljord')
+tap.equal(isFara(options), false, 'Porsgrunn vgs, avdeling Sør returns false from 3840 Seljord')
 
 options.postnummer = 3841
-tap.equal(isFara(options), false, 'Porsgrunn vgs, avdeling Sør returns false from 3672 Flatdal')
+tap.equal(isFara(options), false, 'Porsgrunn vgs, avdeling Sør returns false from 3841 Flatdal')
 
 options.postnummer = 3748
 tap.equal(isFara(options), true, 'Porsgrunn vgs, avdeling Sør returns true from 3748 Siljan')

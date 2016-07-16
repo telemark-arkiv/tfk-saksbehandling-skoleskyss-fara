@@ -69,16 +69,13 @@ options.gatenavn = 'Tjønnåsvegen'
 options.husnummer = 2
 tap.equal(isFara(options), true, 'Vest-telemark-vgs-Seljord returns true from Tjønnåsvegen 2 Bø i Telemark')
 
-options.husnummer = 1
-tap.equal(isFara(options), false, 'Vest-telemark-vgs-Seljord returns false from Tjønnåsvegen 1 Bø i Telemark')
+options.husnummer = 65
+tap.equal(isFara(options), false, 'Vest-telemark-vgs-Seljord returns false from Tjønnåsvegen 65 Bø i Telemark')
 
 options.gatenavn = 'Myhrevegen'
 options.postnummer = 3803
 options.husnummer = 151
 tap.equal(isFara(options), true, 'Vest-telemark-vgs-Seljord returns true from Myhrevegen 151 Bø i Telemark')
-
-options.husnummer = 153
-tap.equal(isFara(options), true, 'Vest-telemark-vgs-Seljord returns true from Myhrevegen 153 Bø i Telemark')
 
 options.husnummer = 154
 tap.equal(isFara(options), false, 'Vest-telemark-vgs-Seljord returns false from Myhrevegen 154 Bø i Telemark')
@@ -399,14 +396,6 @@ tap.equal(isFara(options), true, 'Vest-telemark-vgs-Seljord returns true from S�
 options.husnummer = 259
 tap.equal(isFara(options), false, 'Vest-telemark-vgs-Seljord returns false from Sætrevegen 259 Gvarv')
 
-options.gatenavn = 'Sætrevegen'
-options.postnummer = 3810
-options.husnummer = 258
-tap.equal(isFara(options), true, 'Vest-telemark-vgs-Seljord returns true from Sætrevegen 258 Gvarv')
-
-options.husnummer = 259
-tap.equal(isFara(options), false, 'Vest-telemark-vgs-Seljord returns false from Sætrevegen 259 Gvarv')
-
 options.gatenavn = 'Tangenvegen'
 options.postnummer = 3810
 options.husnummer = 4
@@ -474,9 +463,9 @@ tap.equal(isFara(options), false, 'Vest-telemark-vgs-Seljord returns false from 
 options.gatenavn = 'Bøvegen'
 options.postnummer = 3810
 options.husnummer = 185
-tap.equal(isFara(options), true, 'Vest-telemark-vgs-Seljord returns true from Åsåresvegen 31 Gvarv')
+tap.equal(isFara(options), true, 'Vest-telemark-vgs-Seljord returns true from Åsåresvegen 185 Gvarv')
 
 options.husnummer = 318
-tap.equal(isFara(options), false, 'Vest-telemark-vgs-Seljord returns false from Åsåresvegen 146 Gvarv')
+tap.equal(isFara(options), false, 'Vest-telemark-vgs-Seljord returns false from Åsåresvegen 318 Gvarv')
 
 // Specials ----- End

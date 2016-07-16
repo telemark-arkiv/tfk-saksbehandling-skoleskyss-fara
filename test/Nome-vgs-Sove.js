@@ -51,16 +51,13 @@ options.gatenavn = 'Tjønnåsvegen'
 options.husnummer = 2
 tap.equal(isFara(options), true, 'Nome vgs, avdeling Søve returns true from Tjønnåsvegen 2 Bø i Telemark')
 
-options.husnummer = 1
-tap.equal(isFara(options), false, 'Nome vgs, avdeling Søve returns false from Tjønnåsvegen 1 Bø i Telemark')
+options.husnummer = 65
+tap.equal(isFara(options), false, 'Nome vgs, avdeling Søve returns false from Tjønnåsvegen 65 Bø i Telemark')
 
 options.gatenavn = 'Myhrevegen'
 options.postnummer = 3803
 options.husnummer = 151
 tap.equal(isFara(options), true, 'Nome vgs, avdeling Søve returns true from Myhrevegen 151 Bø i Telemark')
-
-options.husnummer = 153
-tap.equal(isFara(options), true, 'Nome vgs, avdeling Søve returns true from Myhrevegen 153 Bø i Telemark')
 
 options.husnummer = 154
 tap.equal(isFara(options), false, 'Nome vgs, avdeling Søve returns false from Myhrevegen 154 Bø i Telemark')
@@ -304,8 +301,8 @@ options.postnummer = 3810
 options.husnummer = 1
 tap.equal(isFara(options), true, 'Nome vgs, avdeling Søve returns true from Gvarvgata 1 Gvarv')
 
-options.husnummer = 181
-tap.equal(isFara(options), false, 'Nome vgs, avdeling Søve returns false from Gvarvgata 181 Gvarv')
+options.husnummer = 109
+tap.equal(isFara(options), false, 'Nome vgs, avdeling Søve returns false from Gvarvgata 109 Gvarv')
 
 options.gatenavn = 'Gåsefetbrinken'
 options.postnummer = 3810
@@ -476,14 +473,6 @@ tap.equal(isFara(options), true, 'Nome vgs, avdeling Søve returns true from Sæ
 
 options.husnummer = 257
 tap.equal(isFara(options), false, 'Nome vgs, avdeling Søve returns false from Sætrevegen 257 Gvarv')
-
-options.gatenavn = 'Sætrevegen'
-options.postnummer = 3810
-options.husnummer = 258
-tap.equal(isFara(options), true, 'Nome vgs, avdeling Søve returns true from Sætrevegen 258 Gvarv')
-
-options.husnummer = 259
-tap.equal(isFara(options), false, 'Nome vgs, avdeling Søve returns false from Sætrevegen 259 Gvarv')
 
 options.gatenavn = 'Sætrevegen'
 options.postnummer = 3810
