@@ -43,7 +43,7 @@
     "nsp": "2.6.3",
     "coveralls": "2.13.1",
     "standard": "10.0.2",
-    "tap": "10.3.0"
+    "tap": "10.3.3"
   },
   "dependencies": {
     "is-file": "1.0.0"
