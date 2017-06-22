@@ -1,6 +1,6 @@
 {
   "name": "tfk-saksbehandling-skoleskyss-fara",
-  "version": "4.0.23",
+  "version": "4.0.24",
   "description": "Checks if FARA is transporter",
   "license": "MIT",
   "author": {
@@ -43,7 +43,7 @@
     "nsp": "2.6.3",
     "coveralls": "2.13.1",
     "standard": "10.0.2",
-    "tap": "10.5.1"
+    "tap": "10.3.3"
   },
   "dependencies": {
     "is-file": "1.0.0"
