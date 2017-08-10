@@ -41,4 +41,3 @@ tap.equal(isFara(options), false, 'Hjalmar vgs, avdeling Klosterskogen returns f
 
 options.postnummer = 3748
 tap.equal(isFara(options), true, 'Hjalmar vgs, avdeling Klosterskogen returns true from 3748 Siljan')
-

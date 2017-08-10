@@ -1,6 +1,6 @@
 {
   "name": "tfk-saksbehandling-skoleskyss-fara",
-  "version": "4.0.29",
+  "version": "4.1.0",
   "description": "Checks if FARA is transporter",
   "license": "MIT",
   "author": {
@@ -17,13 +17,14 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=4.6.2"
+    "node": ">=4.8.4"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/*.js",
     "coverage": "tap test/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
-    "setup": "npm install && node setup.js"
+    "setup": "npm install",
+    "standard-fix": "standard --fix"
   },
   "keywords": [
     "Telemark fylkeskommune",
@@ -43,7 +44,7 @@
     "nsp": "2.7.0",
     "coveralls": "2.13.1",
     "standard": "10.0.3",
-    "tap": "10.6.0"
+    "tap": "10.7.1"
   },
   "dependencies": {
     "is-file": "1.0.0"

@@ -1,14 +1,16 @@
 [![Build Status](https://travis-ci.org/telemark/tfk-saksbehandling-skoleskyss-fara.svg?branch=master)](https://travis-ci.org/telemark/tfk-saksbehandling-skoleskyss-fara)
 [![Coverage Status](https://coveralls.io/repos/telemark/tfk-saksbehandling-skoleskyss-fara/badge.svg?branch=master&service=github)](https://coveralls.io/github/telemark/tfk-saksbehandling-skoleskyss-fara?branch=master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/tfk-saksbehandling-skoleskyss-fara.svg)](https://greenkeeper.io/)
+
 # tfk-saksbehandling-skoleskyss-fara
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/tfk-saksbehandling-skoleskyss-fara.svg)](https://greenkeeper.io/)
 Node-module for identifying FARA as transporter.
 
 It uses a combination of zipcodes and schoolids.
 
 ## Installation
+
 From GitHub
 
 ```sh
@@ -24,7 +26,12 @@ $ npm run setup
 This will install the module dependencies and generate the zipcode files
 
 ## Usage
+
 Pass in an options object and get true or false in return.
+
+**gatenavn** street name, required
+
+**husnummer** street number, required
 
 **postnummer** zipcode, required
 
@@ -32,15 +39,17 @@ Pass in an options object and get true or false in return.
 
 ```javascript
 
-'use strict';
+'use strict'
 
-var transportByFara = require('tfk-saksbehandling-skoleskyss-fara');
-var options = {
+const transportByFara = require('tfk-saksbehandling-skoleskyss-fara');
+const options = {
+  gatenavn: 'Kongsbergvegen',
+  husnummer: '79',
   postnummer: 3681,
   skoleid: 3880
-};
+}
 
-console.log(transportByFara(options)); //Returns true
+console.log(transportByFara(options)) //Returns true
 
 ```
 
@@ -53,3 +62,9 @@ The complete list of schoolids is in [lib/data/skoleliste_full.json](https://git
 ```sh
 $ npm test
 ```
+
+## License
+
+[MIT](LICENSE)
+
+![Robohash image of tfk-saksbehandling-skoleskyss-fara](https://robots.kebabstudios.party/tfk-saksbehandling-skoleskyss-fara.png "Robohash image of tfk-saksbehandling-skoleskyss-fara")
