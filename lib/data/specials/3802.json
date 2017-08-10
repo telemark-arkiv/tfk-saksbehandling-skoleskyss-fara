@@ -8,6 +8,13 @@
       }
     },
     {
+      "name": "Vreimsida",
+      "range": {
+        "min": 83,
+        "max": 926
+      }
+    },
+    {
       "name": "Myhrevegen",
       "range": {
         "min": 151,
