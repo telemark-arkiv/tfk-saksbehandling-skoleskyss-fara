@@ -99,7 +99,51 @@
       }
     }
   ],
- "3810":[
+ "3840":[
+   {
+     "name": "Flatdalsvegen",
+     "range": {
+       "min": 5,
+       "max": 433
+     }
+   },
+   {
+     "name": "Flatingrendi",
+     "range": {
+       "min": 1,
+       "max": 39
+     }
+   },
+   {
+     "name": "Lidgrendi",
+     "range": {
+       "min": 44,
+       "max": 224
+     }
+   },
+   {
+     "name": "Århusmoen",
+     "range": {
+       "min": 1,
+       "max": 20
+     }
+   },
+   {
+     "name": "Grunningsdalsvegen",
+     "range": {
+       "min": 2,
+       "max": 1125
+     }
+   },
+   {
+     "name": "Grimås",
+     "range": {
+       "min": 115,
+       "max": 600
+     }
+   }
+  ],
+  "3810":[
    {
      "name": "Aslaksborgvegen",
      "range": {
