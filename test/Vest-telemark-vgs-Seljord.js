@@ -160,13 +160,13 @@ tap.equal(isFara(options), true, 'Vest-telemark-vgs-Seljord returns true from Ky
 options.husnummer = 170
 tap.equal(isFara(options), false, 'Vest-telemark-vgs-Seljord returns false from Kyrkjevegen 170 Bø i Telemark')
 
-options.gatenavn = 'Rokkemakervegen'
+options.gatenavn = 'Rokkemakarvegen'
 options.postnummer = 3803
 options.husnummer = 10
-tap.equal(isFara(options), true, 'Vest-telemark-vgs-Seljord returns true from Rokkemakervegen 10 Bø i Telemark')
+tap.equal(isFara(options), true, 'Vest-telemark-vgs-Seljord returns true from Rokkemakarvegen 10 Bø i Telemark')
 
 options.husnummer = 82
-tap.equal(isFara(options), false, 'Vest-telemark-vgs-Seljord returns false from Rokkemakervegen 82 Bø i Telemark')
+tap.equal(isFara(options), false, 'Vest-telemark-vgs-Seljord returns false from Rokkemakarvegen 82 Bø i Telemark')
 
 // 3810 GVARV
 
