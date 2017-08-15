@@ -139,13 +139,13 @@ tap.equal(isFara(options), true, 'Bø vgs returns true from Kyrkjevegen 129 Bø 
 options.husnummer = 170
 tap.equal(isFara(options), false, 'Bø vgs returns false from Kyrkjevegen 170 Bø i Telemark')
 
-options.gatenavn = 'Rokkemakervegen'
+options.gatenavn = 'Rokkemakarvegen'
 options.postnummer = 3803
 options.husnummer = 10
-tap.equal(isFara(options), true, 'Bø vgs returns true from Rokkemakervegen 10 Bø i Telemark')
+tap.equal(isFara(options), true, 'Bø vgs returns true from Rokkemakarvegen 10 Bø i Telemark')
 
 options.husnummer = 82
-tap.equal(isFara(options), false, 'Bø vgs returns false from Rokkemakervegen 82 Bø i Telemark')
+tap.equal(isFara(options), false, 'Bø vgs returns false from Rokkemakarvegen 82 Bø i Telemark')
 
 options.gatenavn = 'Vreimsida'
 options.postnummer = 3803
