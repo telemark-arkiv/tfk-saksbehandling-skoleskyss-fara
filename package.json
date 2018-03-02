@@ -41,9 +41,9 @@
     "url": "http://github.com/telemark/tfk-saksbehandling-skoleskyss-fara/issues"
   },
   "devDependencies": {
-    "nsp": "3.1.0",
+    "nsp": "3.2.1",
     "coveralls": "3.0.0",
-    "standard": "10.0.3",
+    "standard": "11.0.0",
     "tap": "11.1.1"
   },
   "dependencies": {
